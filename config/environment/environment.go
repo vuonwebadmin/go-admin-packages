@@ -7,7 +7,7 @@ import (
 type Environment string
 
 var (
-	Development Environment = constants.EnvDevelopment
-	Production  Environment = constants.EnvProduction
-	Test        Environment = constants.EnvTest
+	Development Environment = Environment(constants.EnvDevelopment)
+	Production  Environment = Environment(constants.EnvProduction)
+	Test        Environment = Environment(constants.EnvTest)
 )
